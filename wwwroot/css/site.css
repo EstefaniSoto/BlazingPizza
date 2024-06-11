@@ -70,3 +70,167 @@ h1 {
     font-weight: bold;
     margin-top: 10px;
 }
+
+.modal.show.d-block {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.size-label {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.modal-dialog-centered {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 1rem);
+}
+
+.modal-content {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.modal-header {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+.modal-footer {
+    border-top: 1px solid #dee2e6;
+    padding: 1rem;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/* styles.css */
+
+.sidebar {
+    width: 300px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 20px;
+    background: #f8f9fa;
+    border-left: 1px solid #dee2e6;
+}
+
+.order-contents {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.title {
+    font-size: 1.2em;
+}
+
+.item-price {
+    font-weight: bold;
+}
+
+.delete-item {
+    cursor: pointer;
+    color: red;
+    margin-left: 10px;
+}
+
+.empty-cart {
+    text-align: center;
+    font-size: 1.2em;
+    color: #6c757d;
+}
+
+.order-total {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding-top: 10px;
+    border-top: 1px solid #dee2e6;
+}
+
+.total-price {
+    color: #28a745;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal.show.d-block {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.size-label {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.modal-dialog-centered {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 1rem);
+}
+
+.modal-content {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.modal-header {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+.modal-footer {
+    border-top: 1px solid #dee2e6;
+    padding: 1rem;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}

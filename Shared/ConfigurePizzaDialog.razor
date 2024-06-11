@@ -1,0 +1,37 @@
+﻿@inject HttpClient HttpClient
+
+<div class="modal fade show d-block" tabindex="-1" style="display: block;">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">@Pizza.Special.Name</h5>
+                <button type="button" class="close" @onclick="OnCancel" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>@Pizza.Special.Description</p>
+                <div class="form-group">
+                    <label>Size:</label>
+                    <input type="range" min="@Pizza.MinimumSize" max="@Pizza.MaximumSize" step="1" @bind="Pizza.Size" @bind:event="oninput" class="form-control-range" />
+                    <span class="size-label">
+                        @(Pizza.Size)" (£@(Pizza.GetFormattedTotalPrice()))
+                    </span>
+                </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+                <button type="button" class="btn btn-secondary" @onclick="OnCancel">Cancel</button>
+                <span>
+                    Price: <span class="price">£@(Pizza.GetFormattedTotalPrice())</span>
+                </span>
+                <button type="button" class="btn btn-success" @onclick="OnConfirm">Order ></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public Pizza Pizza { get; set; }
+    [Parameter] public EventCallback OnCancel { get; set; }
+    [Parameter] public EventCallback OnConfirm { get; set; }
+}
